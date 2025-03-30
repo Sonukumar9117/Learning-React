@@ -1,9 +1,11 @@
 import { useState } from "react";
 import "./App.css";
-
 function App() {
   const [step,setStep]=useState(1);
-  const [count,setCount]=useState(1);
+  const [count,setCount]=useState(0);
+  const date=new Date("March 30 2025");
+  const [cacculatedDate, setDates]=useState(date.toDateString());
+   
   return (
     <>
       <div>
@@ -15,12 +17,25 @@ function App() {
       </div>
       <div>
         <span>
-          <button onClick={()=>{setCount((prev)=>Math.max(0,prev-step))}}>-</button>Count:{count}
+          <button onClick={()=>{setCount((prev)=>Math.max(0,prev-step))
+          if(true){
+            date.setDate(date.getDate()+parseInt(count+step))
+            setDates(date.toDateString())
+          }
+              
+          }}>-</button>Count:{count}
         </span>
-        <button onClick={()=>{setCount((prev)=>prev+step)}}>+</button>
+        <button onClick={
+          ()=>{setCount((prev)=>prev+step);
+            if(true){
+              date.setDate(date.getDate()+parseInt(count+step))
+              setDates(date.toDateString())
+            }
+
+        }}>+</button>
         <span></span>
       </div>
-      <div>{count} days from today is </div>
+      <div>{count}  days from today is {cacculatedDate}</div>
     </>
   );
 }
