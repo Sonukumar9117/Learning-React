@@ -1,0 +1,23 @@
+img{
+  height: 200px;
+  width: 250px;
+}
+.profile{
+  border: solid 2px black;
+  width: 250px ;
+}
+.name{
+  color: black;
+  text-align: center;
+  font-weight: bold;
+}
+#profile-description{
+  margin: 10px;
+  text-align: justify;
+}
+.skills{
+  margin-left: 8px;
+}
+.profile{
+  padding-bottom: 8px;
+}
