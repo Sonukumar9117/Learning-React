@@ -1,0 +1,35 @@
+.cardfalse{
+  display: flex;
+  width: 300px;
+  height: 150px;
+  justify-content: center;  /* it allign item center Horizontally*/
+  justify-items: center; 
+  align-items: center;
+  background-color: antiquewhite;
+  border-radius: 10px;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: larger;
+  padding: 10px;
+  font-weight: bold;
+}
+.cardtrue{
+  display: flex;
+  width: 300px;
+  height: 150px;
+  justify-content: center;  /* it allign item center Horizontally*/
+  justify-items: center; 
+  align-items: center;
+  background-color: rgb(46, 116, 238);
+  border-radius: 10px;
+  color: white;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: larger;
+  font-weight: bold;
+  padding: 10px;
+}
+.container{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
